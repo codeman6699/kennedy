@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { Menu, X, ArrowUpRight } from 'lucide-vue-next'
-import logo from '../assets/kennedy-mark.svg'
+import logo from '../assets/k.jpg'
 const menuOpen = ref(false)
 const links = [
   { label: 'Home', href: '#home' }, { label: 'About', href: '#about' },
@@ -13,7 +13,7 @@ function closeMenu() { menuOpen.value = false }
 <template>
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Kennedy portfolio home" @click="closeMenu">
-      <img :src="logo" alt="Kennedy K logo" />
+      <img src="../assets/k.jpg" alt="Kennedy K logo" />
       <span style="font-weight: 900;"><strong><i>Kennedy</i></strong><small>FRONTEND DEVELOPER</small></span>
     </a>
     <button class="mobile-menu-button" type="button" :aria-label="menuOpen ? 'Close navigation' : 'Open navigation'" @click="menuOpen = !menuOpen">
